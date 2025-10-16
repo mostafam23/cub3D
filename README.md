@@ -37,9 +37,31 @@ Cub3D is a project from the 42 curriculum that implements a simple 3D game engin
 ### Prerequisites
 
 - GCC compiler
-- MiniLibX library
 - X11 development libraries (Linux)
 - Make
+
+### Installing MiniLibX
+
+Before building the project, you need to install the MiniLibX library:
+
+```bash
+# Clone MiniLibX repository
+git clone https://github.com/42Paris/minilibx-linux.git
+
+# Navigate to the directory
+cd minilibx-linux
+
+# Install dependencies (Ubuntu/Debian)
+sudo apt-get update
+sudo apt-get install libx11-dev libxext-dev libbsd-dev
+
+# Compile MiniLibX
+make
+
+# Install (optional - you can also link directly from the cloned directory)
+sudo cp libmlx.a /usr/local/lib/
+sudo cp mlx.h /usr/local/include/
+```
 
 ### Building the Project
 
